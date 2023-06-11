@@ -74,6 +74,7 @@ app.get("/api/get-all-short-urls", function (request, response) {
 app.get("/:shorturlid", function (request, response) {
   let shorturlid = request.params.shorturlid;
   let sql = `SELECT * FROM links WHERE shorturlid = '${shorturlid}' LIMIT 1`;
+
   con.query(sql, function (error, result) {
     if (error) {
       response.status(500).json({
@@ -81,19 +82,14 @@ app.get("/:shorturlid", function (request, response) {
         message: "Something went wrong",
       });
     } else {
-      sql = `UPDATE links SET count = '${result[0].count + 1}' WHERE id = '${
-        result[0].id
-      }' LIMIT 1`;
-      con.query(sql, function (error, result2) {
-        if (error) {
-          response.status(500).json({
-            status: "notok",
-            message: "Something went wrong",
-          });
-        } else {
-          response.redirect(result[0].longurl);
-        }
-      });
+      if (result.length === 0) {
+        response.status(404).json({
+          status: "notok",
+          message: "Short URL not found",
+        });
+      } else {
+        response.redirect(result[0].longurl);
+      }
     }
   });
 });

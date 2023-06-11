@@ -32,7 +32,6 @@
                 <tr>
                     <th>LongURL</th>
                     <th>ShortURL</th>
-                    <th>Count</th>
                 </tr>
             </thead>
             <tbody>
@@ -71,7 +70,6 @@
                         <tr>
                             <td>${longurl}</td>
                             <td>${host}${data.shorturlid}</td>
-                            <td>${0}</td>
                         </tr>
                         `;
                         document.querySelector("#list_urls tbody").innerHTML += html;
@@ -92,7 +90,6 @@
                         <tr>
                             <td>${data[i].longurl}</td>
                             <td>${host}${data[i].shorturlid}</td>
-                            <td>${data[i].count}</td>
                         </tr>                        
                         `;
                     }
