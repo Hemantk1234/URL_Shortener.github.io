@@ -2,9 +2,9 @@
   "name": "url_shortener.github.io",
   "version": "1.0.0",
   "description": "- Our URL Shortener web application offers a convenient solution for transforming long URLs into shorter, more manageable links.\r - Users can input lengthy URLs into the application and receive instant access to customized, shortened links.\r - The shortened links are easier to share and remember, making them ideal for various platforms such as social media, emails, and more.\r - The application includes click analytics functionality, allowing users to track the number of clicks and engagement received by their shortened links.\r - Users can gain valuable insights into the performance of their links, helping them optimize their sharing strategies.\r - With our URL shortener, link management becomes simpler and more efficient, saving time and effort in sharing and tracking URLs.",
-  "main": "index.js",
+  "main": "code.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node code.js"
   },
   "keywords": [],
   "author": "",
