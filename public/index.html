@@ -40,9 +40,14 @@
     </div>
 
     <script type="text/javascript">
+        // Base URL of the API requests.
         const host = "http://localhost:3000/";
+
+        // Event listener for the button to create a short URL.
         document.querySelector("#create-short-url").addEventListener("click", function () {
+            // Get the long URL from the input field.
             let longurl = document.querySelector("#longurl").value;
+            // Check if the long URL is empty or not.
             if (longurl.length === 0) {
                 alert("Enter a valid URL");
                 return;
@@ -50,6 +55,8 @@
                 alert("Enter a valid link");
                 return;
             }
+
+            // Make and send a POST request to the API to create a short URL.
             fetch(host + "api/create-short-url", {
                 method: "POST",
                 headers: {
@@ -64,8 +71,11 @@
                 })
                 .then(function (data) {
                     if (data.status === "ok") {
+                        // Display the short URL to the user that is returned by the API.
                         document.querySelector("#short-url").innerHTML = host + data.shorturlid;
                         document.querySelector("#short-url").href = host + data.shorturlid;
+
+                        // Append the new URL to the list of URLs.
                         let html = `
                         <tr>
                             <td>${longurl}</td>
@@ -79,6 +89,8 @@
                     alert("Something went wrong");
                 });
         });
+
+        // Immediately invoked function to fetch all the URLs from the API.
         (
             function () {
                 fetch(host + "api/get-all-short--urls").then(function (response) {

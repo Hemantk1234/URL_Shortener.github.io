@@ -5,10 +5,16 @@ const cors = require("cors");
 
 const app = express();
 
+// Serve static files from the "public" directory
 app.use(express.static("public"));
+
+// Parse the request body as JSON
 app.use(express.json());
+
+// Enable Cross Origin Resource Sharing (CORS)
 app.use(cors());
 
+// Create a MySQL connection
 const con = mysql.createConnection({
   host: "localhost",
   user: "root",
@@ -16,6 +22,7 @@ const con = mysql.createConnection({
   database: "shorturls",
 });
 
+// Connect to the database
 con.connect(function (error) {
   if (error) {
     console.log("Database connection failed");
@@ -25,15 +32,20 @@ con.connect(function (error) {
   }
 });
 
+// Serve the index.html file for the root route
 app.get("/", function (request, response) {
   response.sendFile(__dirname + "/public/index.html");
 });
 
+// Handle POST request to create a new short URL
 app.post("/api/create-short-url", function (request, response) {
+  // Generate a unique ID for the short URL
   let uniqueID = Math.random()
     .toString(36)
     .replace(/[^a-z0-9]/gi, "")
     .substr(2, 10);
+
+  // Insert the long URL and the short URL ID into the database
   let sql = `INSERT INTO links (longurl, shorturlid) VALUES ('${request.body.longurl}', '${uniqueID}')`;
 
   con.query(sql, function (error, result) {
@@ -52,7 +64,9 @@ app.post("/api/create-short-url", function (request, response) {
   });
 });
 
+// Handle GET request to retrieve all short URLs
 app.get("/api/get-all-short-urls", function (request, response) {
+  // Retrieve all records from the "links" table
   let sql = "SELECT * FROM links";
 
   con.query(sql, function (error, result) {
@@ -71,8 +85,11 @@ app.get("/api/get-all-short-urls", function (request, response) {
   });
 });
 
+// Handle GET request for a specific short URL
 app.get("/:shorturlid", function (request, response) {
   let shorturlid = request.params.shorturlid;
+
+  // Retrieve the long URL from the database using the short URL ID
   let sql = `SELECT * FROM links WHERE shorturlid = '${shorturlid}' LIMIT 1`;
 
   con.query(sql, function (error, result) {
@@ -88,12 +105,14 @@ app.get("/:shorturlid", function (request, response) {
           message: "Short URL not found",
         });
       } else {
+        // Redirect to the long URL
         response.redirect(result[0].longurl);
       }
     }
   });
 });
 
+// Start the server
 app.listen(3000, function () {
   console.log("Server listening on port 3000");
 });
