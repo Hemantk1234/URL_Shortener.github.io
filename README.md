@@ -10,7 +10,7 @@ This is a URL Shortener project developed using HTML, CSS, JS, Node.js, and MySQ
 
 - Overall, our URL shortener web application streamlines the process of creating and managing shortened links, providing users with a user-friendly and effective tool for enhancing their online link sharing experience.
 
-- - ![URL-Shortner](https://github.com/Hemantk1234/URL_Shortener.github.io/assets/125623888/b7f21c35-7662-437e-93a2-165bae4f84cd)
+- ![URL-Shortner](https://github.com/Hemantk1234/URL_Shortener.github.io/assets/125623888/b7f21c35-7662-437e-93a2-165bae4f84cd)
 
 ## 🔨 Tools Used :- 
 
@@ -89,9 +89,9 @@ To use the URL Shortener application, follow these steps:
 ## 💻 Screens Available
 
 - Desktop Version :
-    [Desktop.png](https://postimg.cc/V5jQzjnN)
+    ![Desktop](https://github.com/Hemantk1234/URL_Shortener.github.io/assets/125623888/29a2c0a3-78b3-4be8-91f2-67527f4cf33c)
 - Tablet Version :
-    [Tablet.png](https://postimg.cc/0M7kgh9k)
+    ![Tab](https://github.com/Hemantk1234/URL_Shortener.github.io/assets/125623888/0f1774e9-4bdd-40bf-b13d-279a6e31d725)
 
 **🔥Important NOTE**
 
