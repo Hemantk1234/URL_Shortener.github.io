@@ -81,8 +81,8 @@ To use the URL Shortener application, follow these steps:
 
 - **Video Title:** URL_Shortener Demo
 - **Video Description:** This video shows how to use the URL Shortener application to shorten a long URL and how to redirect to the original long URL using the shortened URL.
-
-[![Demo](https://github.com/Hemantk1234/URL_Shortener.github.io/issues/1#issue-1771112778)
+- ![Demo](https://github.com/Hemantk1234/URL_Shortener.github.io/issues/1#issue-1771112778)
+- **Complete Video Drive-Link:**
 
 **Complete Video Drive-Link:** 
 
