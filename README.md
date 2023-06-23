@@ -40,7 +40,7 @@ To use this project, follow these steps:
     You can check the versions using the following commands:
     - Node.js: `node -v`
     - MySQL: `mysql --version`
-    Note: Make sure your Node.js version is compatible with the project requirements mentioned in the package.json file.
+    - Note: Make sure your Node.js version is compatible with the project requirements mentioned in the package.json file.
 5. Create a new database in MySQL and Configure your MySQL database by providing your credentials in the code. 
     Locate the file responsible for connecting to the database (code.js) and update the following lines with your MySQL username and password:
     ```js
@@ -63,7 +63,7 @@ To use this project, follow these steps:
     The application will start running on your localhost.
 7. Access the URL Shortener application by opening a web browser and navigating to the following URL:
     ```shell
-    http://localhost:3000/
+    http://localhost:3000
     ```
     You will see the home page of the URL Shortener application.
 
@@ -79,8 +79,11 @@ To use the URL Shortener application, follow these steps:
 
 - This is demo video of the URL Shortener application. 
 
-**Video Title:** URL_Shortener Demo
-**Video Description:** This video shows how to use the URL Shortener application to shorten a long URL and how to redirect to the original long URL using the shortened URL.
+- **Video Title:** URL_Shortener Demo
+- **Video Description:** This video shows how to use the URL Shortener application to shorten a long URL and how to redirect to the original long URL using the shortened URL.
+
+[![Demo](https://github.com/Hemantk1234/URL_Shortener.github.io/issues/1#issue-1771112778)
+
 **Complete Video Drive-Link:** 
 
 ## 💻 Screens Available
