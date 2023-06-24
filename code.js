@@ -17,9 +17,10 @@ app.use(cors());
 // Create a MySQL connection
 const con = mysql.createConnection({
   host: "localhost",
-  user: "root",
-  password: "#442301@Hk",
-  database: "shorturls",
+  user: "your_username",
+  password: "your_password",
+  // Change the database name if necessary (here it's "shorturls")
+  database: "your_database_name",
 });
 
 // Connect to the database
