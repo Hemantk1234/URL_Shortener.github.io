@@ -84,7 +84,7 @@ To use the URL Shortener application, follow these steps:
 - **Video Title:** URL_Shortener Demo
 - **Video Description:** This video shows how to use the URL Shortener application to shorten a long URL and how to redirect to the original long URL using the shortened URL.
 - **Complete Video Drive-Link:** 
-- ![Project link](https://drive.google.com/drive/folders/1188fWSQI6Fp1HK-yoVrL4qwXbHyLCVuV?usp=drive_link)
+  [Project Link](https://drive.google.com/drive/folders/1188fWSQI6Fp1HK-yoVrL4qwXbHyLCVuV?usp=drive_link)
 
 ## 💻 Screens Available
 
