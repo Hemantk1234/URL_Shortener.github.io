@@ -10,9 +10,10 @@ This is a URL Shortener project developed using HTML, CSS, JS, Node.js, and MySQ
 
 - Overall, our URL shortener web application streamlines the process of creating and managing shortened links, providing users with a user-friendly and effective tool for enhancing their online link sharing experience.
 
-- ![URL-Shortner](https://github.com/Hemantk1234/URL_Shortener.github.io/assets/125623888/b7f21c35-7662-437e-93a2-165bae4f84cd)
+- ![URL-Shortner](https://github.com/Hemantk1234/URL_Shortener.github.io/assets/125623888/bb297dd5-0174-46aa-98c5-31d16f6eda34)
 
-## 🔨 Tools Used :- 
+## 🔨 Tools 
+Used :- 
 
 The project utilizes the following technologies:
 
@@ -85,15 +86,17 @@ To use the URL Shortener application, follow these steps:
 - ![Project Demo link](https://github.com/Hemantk1234/URL_Shortener.github.io/issues/1#issue-1771112778)
 
 **Complete Video Drive-Link:** 
+- 
 
 ## 💻 Screens Available
 
 - Desktop Version :
-    ![Desktop](https://github.com/Hemantk1234/URL_Shortener.github.io/assets/125623888/29a2c0a3-78b3-4be8-91f2-67527f4cf33c)
+    ![Desktop](https://github.com/Hemantk1234/URL_Shortener.github.io/assets/125623888/aa6afdd1-52cb-4e0c-a119-be3205d13e9c)
 - Tablet Version :
-    ![Tab](https://github.com/Hemantk1234/URL_Shortener.github.io/assets/125623888/0f1774e9-4bdd-40bf-b13d-279a6e31d725)
+    ![Tab](https://github.com/Hemantk1234/URL_Shortener.github.io/assets/125623888/b09a1dcf-af4f-4151-94ae-7610fbe51149)
 
 **🔥Important NOTE**
+
 
 - The application will not accept invalid URLs.
 - This project is currently designed to run on a local server and uses a local MySQL database for storing data. 
